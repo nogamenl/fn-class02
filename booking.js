@@ -15,10 +15,10 @@ function validsubmit(){
     }
     var phonePattern = /^[0-9]{10}$/;
     if (!phonePattern.test(contactPhone)) {
-        document.getElementById('phone-error').style.display = 'inline'; // แสดงข้อความเตือน
-        return false; // หยุดการส่งฟอร์ม
+        document.getElementById('phone-error').style.display = 'inline'; 
+        
     } else {
-        document.getElementById('phone-error').style.display = 'none'; // ซ่อนข้อความเตือนหากเบอร์ถูกต้อง
+        document.getElementById('phone-error').style.display = 'none'; 
     }
 
     if (numTravelers < 1 || numTravelers > 15) {
